@@ -1,0 +1,24 @@
+[project]
+name = "cbc-mac"
+version = "0.1.0"
+description = "Intro to Cryptology: Assignment 4"
+readme = "README.md"
+authors = [
+    { name = "William Disman", email = "61093919+wdiz25@users.noreply.github.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "pycryptodome>=4.2.0",
+]
+
+[project.scripts]
+cbc-mac = "cbc_mac:main"
+
+[build-system]
+requires = ["uv_build>=0.12.15,<0.13.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]
